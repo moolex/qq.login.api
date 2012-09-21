@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>QQ 登录模拟</title>
+<link rel="stylesheet" href="share/bootstrap.min.css" />
+<style type="text/css"> body { padding-top:60px; } </style>
+<script type="text/javascript" src="share/jquery.js"></script>
+<script type="text/javascript" src="share/query.js"></script>
+</head>
+<body>
+<div class="topbar">
+	<div class="fill">
+		<div class="container">
+			<a class="brand" href="/">QQ 登录模拟</a>
+			<ul class="nav">
+				<li><a href="http://moyo.uuland.org/" title="Moyo">悠悠大陆</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="container"><div class="content">
+	<div class="page-header">
+		<h1>
+			<a href="" target="_blank">说明</a>
+			<small>
+				<p class="BSHARE_TEXT">https://github.com/moolex/qq.login.api</p>
+			</small>
+		</h1>
+	</div>
+	<div class="row">
+		<table>
+			<tr>
+				<td>QQ号码</td>
+				<td>
+					<input id="uin" type="text" />
+				</td>
+			</tr>
+			<tr>
+				<td>QQHEX</td>
+				<td>
+					<input id="uin_enc" type="text" readonly="readonly" />
+				</td>
+			</tr>
+			<tr>
+				<td>密码</td>
+				<td>
+					<input id="password" type="password" />
+				</td>
+			</tr>
+			<tr>
+				<td>验证码</td>
+				<td>
+					<input id="vfcode" type="text" />
+					<span id="captcha"></span>
+				</td>
+			</tr>
+			<tr>
+				<td> <span id="result"></span> </td>
+				<td> <input id="login" type="button" value="登录" class="btn primary" /> </td>
+			</tr>
+		</table>
+	</div>
+	<div class="row">
+		<table>
+			<tr>
+				<td>URL地址</td>
+				<td>
+					<input id="url" type="text" value="http://php.qzone.qq.com/check_login.php" style="width:60%;" />
+					<input id="get" type="button" value="GET" class="btn" />
+				</td>
+			</tr>
+			<tr>
+				<td>返回内容</td>
+				<td>
+					<textarea id="response" style="width:60%;height:200px;"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>COOKIES</td>
+				<td>
+					<pre id="cookies"></pre>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<footer>
+	<p>
+		(C) 2012 <a href="http://moyo.uuland.org/">Moyo</a>.
+	</p>
+</footer>
+</div>
+</body>
+</html>
