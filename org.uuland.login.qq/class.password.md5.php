@@ -13,7 +13,7 @@ class UULAND_QQLogin_Password_MD5
     /**
      * HASH Server URL
      */
-    private $HASH_Server = 'http://md5.apiz.org/';
+    private $HASH_Server = 'http://demo.uuland.org/~md5/';
     /**
      * Get MD5 using Normal
      */
